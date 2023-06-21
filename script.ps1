@@ -4,7 +4,7 @@ param (
 )
 
 
-$securePassword = Read-Host "Enter the password" -AsSecureString
+$securePassword = Read-Host "Enter password: " -AsSecureString
 
 $password = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($securePassword))
 
